@@ -491,7 +491,7 @@ display: none;
 	float:right;
 	margin-top:15px;
 	width:36px;
-	height:36px;
+	height:36px;	
 	background:#333;
 	padding:6px;
 	text-align:center;
@@ -1142,14 +1142,14 @@ color:#888;
 .toggle-list li{ margin-bottom:10px; background:#fff; border:solid 1px #ddd;  border-bottom:solid 3px #ddd;}
 .toggle-list li h2{-moz-user-select: none; -html-user-select: none; user-select: none; color:#555;  font-size:16px; line-height:20px; font-family:"Roboto",Arial, Helvetica, sans-serifr; padding:10px 20px 0px 60px; font-weight:700; display:block; letter-spacing:normal;}
 .toggle-list li .acc_active:hover{ color:#777;
-background:url(../images/icon-slide-plus.png) 20px center no-repeat;
-padding-left:80px;
+background:url(../images/icon-slide-plus.png) 20px center no-repeat; 
+padding-left:80px; 
 -o-transition:.5s;
 -ms-transition:.5s;
 -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s;}
-
+ 
 .toggle-list li .acc_noactive:hover{ color:#777;
 background:url(../images/icon-slide-min.png) 20px center no-repeat;
 -o-transition:.5s;
@@ -1165,7 +1165,7 @@ background:url(../images/icon-slide-min.png) 20px center no-repeat;
   -webkit-transition:.5s;
   transition:.5s;
  height:32px;
-
+ 
  }
 .acc_noactive{background:url(../images/icon-slide-min.png) 20px center no-repeat;}
 
@@ -1391,7 +1391,7 @@ width:100%;
 #sidebar{
 padding-left:40px;
 }
-
+ 
 .widget {
 margin-bottom: 60px;
 }
@@ -1584,7 +1584,7 @@ padding: 10px 0 0 0;
 .quick-search input {
 width: 120px;
 border-radius: 40px;
-}
+} 
 
 /* -------------------------------------------------- */
 /* video */
@@ -1893,7 +1893,7 @@ margin-bottom: 30px;
 
 }
 
-/* --------------------------------------------------
+/* -------------------------------------------------- 
 design for 768px
 /* -------------------------------------------------- */
 @media (min-width: 768px) and (max-width: 979px) {
@@ -2030,8 +2030,8 @@ padding: 20px;
 }
 
 
-/* --------------------------------------------------
-custom for 320px & 480px
+/* -------------------------------------------------- 
+custom for 320px & 480px 
 /* -------------------------------------------------- */
 @media only screen and (max-width: 767px) {
 .pricing-2-col .pricing-box, .pricing-3-col .pricing-box, .pricing-4-col .pricing-box, .pricing-5-col .pricing-box {
@@ -2041,7 +2041,7 @@ width: 100%;
 }
 
 
-/* --------------------------------------------------
+/* -------------------------------------------------- 
 design for 480px
 /* -------------------------------------------------- */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -2054,7 +2054,7 @@ max-width:100px;  height:auto;
 }
 
 
-/* --------------------------------------------------
+/* -------------------------------------------------- 
 design for 320px
 /* -------------------------------------------------- */
 @media only screen and (max-width: 767px) {
@@ -2071,7 +2071,7 @@ width: 100%;
 }
 }
 
-/* --------------------------------------------------
+/* -------------------------------------------------- 
 design for 320px
 /* -------------------------------------------------- */
 @media (min-width: 300px) and (max-width: 979px) {
