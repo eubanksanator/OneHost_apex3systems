@@ -65,7 +65,7 @@
 					keyboardNavigation:"on",
 
 					touchenabled:"on",						// Enable Swipe Function : on/off
-					onHoverStop:"on",						// Stop Banner Timet at Hover on Slide on/off
+					onHoverStop:"off",						// Stop Banner Timet at Hover on Slide on/off
 
 
 					stopAtSlide:-1,							// Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
@@ -3911,7 +3911,7 @@
 										// START OF VIDEO JS
 										if (nextcaption.find('video').length>0) {
 
-															
+
 											nextcaption.find('video').each(function(i) {
 												var html5vid = jQuery(this).parent();
 
@@ -3929,9 +3929,9 @@
 													updateHTML5Size(html5vid,opt.container);
 
 												var htmlint = setInterval(function() {
-													if (typeof videojs !=undefined && typeof videojs !="undefined") 
+													if (typeof videojs !=undefined && typeof videojs !="undefined")
 																var html5vid = nextcaption.find('video').parent();
-																
+
 																if (html5vid!=undefined && html5vid.hasClass("video-js")) {
 
 
@@ -3940,42 +3940,42 @@
 																				html5vid.addClass("HasListener");
 																				var videoID = "videoid_"+Math.round(Math.random()*1000+1);
 																				html5vid.attr('id',videoID);
-		
+
 																				videojs(videoID).ready(function(){
-		
+
 																					html5vidready(this,videoID)
-		
+
 																				});
-		
+
 																			} else {
 																				videoID = html5vid.attr('id');
 																			}
 
-																			
+
 																			if (nextcaption.data('autoplay')==true) {
-		
+
 
 																				var bt=jQuery('body').find('#'+opt.container.attr('id')).find('.tp-bannertimer');
 																				setTimeout(function(){
-		
+
 																					opt.videoplaying=true;
 																				},200);
-																							
+
 																				//konsole.log("VideoPlay set to True due HTML5 VIDEO 1st/2nd load AutoPlay");
-		
-		
+
+
 																				videojs(videoID).ready(function(){
 																					var myPlayer = this;
-		
+
 																					if (html5vid.data('loadedmetadata')==1 || html5vid.data('canplay') == 1)
 																							if (nextcaption.data('forcerewind')=="on")
 																								  myPlayer.currentTime(0);
-		
+
 																					html5vid.data('timerplay',setTimeout(function() {
 																					if (html5vid.data('loadedmetadata')==1 || html5vid.data('canplay') == 1) {
 																							if (nextcaption.data('forcerewind')=="on")
 																								myPlayer.currentTime(0);
-		
+
 																							if (html5vid.closest('.tp-caption').data('volume')=="mute")
 																								myPlayer.volume(0);
 																						}
@@ -3985,42 +3985,42 @@
 																						},50);
 																					},10+nextcaption.data('start')));
 																				});
-		
+
 																			}
-		
-		
+
+
 																			html5vid.find('.vjs-poster').css({display:"block"});
-		
-		
-		
-		
+
+
+
+
 																			if (html5vid.data('ww') == undefined) html5vid.data('ww',html5vid.width());
 																			if (html5vid.data('hh') == undefined) html5vid.data('hh',html5vid.height());
-		
+
 																			videojs(videoID).ready(function(){
 																				if (!nextcaption.hasClass("fullscreenvideo")) {
 																					var myPlayer = videojs(videoID);
-		
+
 																					try{
 																						myPlayer.width(html5vid.data('ww')*opt.bw);
 																						myPlayer.height(html5vid.data('hh')*opt.bh);
 																					} catch(e) {}
 																				}
 																			});
-		
-		
-		
+
+
+
 																			if (html5vid.closest('.tp-caption').data('forcecover')==1) {
 																				updateHTML5Size(html5vid,opt.container);
 																				html5vid.addClass("fullcoveredvideo");
 																			}
-		
+
 																			clearInterval(htmlint);
 
-		
+
 																		 }
-																													    
-											    },100) 
+
+											    },100)
 											});
 										} // END OF VIDEO JS FUNCTIONS
 

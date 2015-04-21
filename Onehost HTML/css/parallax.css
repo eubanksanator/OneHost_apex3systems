@@ -5,7 +5,7 @@ section{
 padding:90px 0 90px 0;
 }
 #testimonial-full{
-background:#116493;
+background:#D62727;
 }
 #subheader{
 background:url(../images/bg-subheader-1.jpg) top fixed;
@@ -27,7 +27,8 @@ background:url(../images/bg-blur-3-light.jpg) top fixed;
 background:#bbb;
 }
 .light  #page-include{
-	background:#2079ab;
+	background:#C40000;
+  opacity: 0.7;
 }
 
 
@@ -51,7 +52,7 @@ background:url(../images/bg-blur-3.jpg) top fixed;
 background:#111;
 }
 .dark #page-include{
-	background:#2079ab;
+	background:url(../images/bg-subheader-1.jpg) top fixed;
 }
 
 
