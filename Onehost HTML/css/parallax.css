@@ -21,7 +21,7 @@ background:url(../images/bg-blur-1-light.jpg) top fixed;
 background:url(../images/bg-blur-2-light.jpg) top fixed;
 }
 .light  #page-why-choose-us{
-background:url(../images/bg-blur-3-light.jpg) top fixed;
+background:url(../images/blank.jpg) top fixed;
 }
 .light  #logo-full{
 background:#bbb;
@@ -29,6 +29,9 @@ background:#bbb;
 .light  #page-include{
 	background:#C40000;
   opacity: 0.7;
+}
+.light #page-services{
+  background:url(../images/bg-blur-1-light.jpg);
 }
 
 

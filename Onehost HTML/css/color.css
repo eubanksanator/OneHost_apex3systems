@@ -40,7 +40,6 @@ address span i,
 {
 	color:#C40A0A;
 }
-
 .feature-box i,
 .feature-box-small-icon i,
 #filters a:hover,
@@ -53,7 +52,7 @@ address span i,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
 
-	border-color:#47a6db;
+	border-color: black;
 }
 
 .callbacks_nav {
