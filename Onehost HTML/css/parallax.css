@@ -42,11 +42,12 @@ color:#ccc;
 .dark #page-pricing{
 background:url(../images/bg-blur-1.jpg) top fixed;
 }
+
 .dark  #page-contact{
 background:url(../images/bg-blur-2.jpg) top fixed;
 }
 .dark  #page-why-choose-us{
-background:url(../images/bg-blur-3.jpg) top fixed;
+background:url(../images/bg-blur-3-light.jpg) top fixed;
 }
 .dark  #logo-full{
 background:#111;
