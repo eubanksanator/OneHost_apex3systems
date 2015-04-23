@@ -23,6 +23,10 @@ a.btn-slider.solid,
  {
 	background:#C40A0A;
 }
+a.btn-slider.solid{
+  color: white;
+}
+
 
 .feature-box i,
 .feature-box-small-icon i,
