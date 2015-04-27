@@ -56,7 +56,7 @@ address span i,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
 
-	border-color: black;
+	border-color: #1D9DF2;
 }
 
 .callbacks_nav {
