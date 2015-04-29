@@ -14,6 +14,7 @@ html {
 		padding:0;
 		overflow:hidden;
 		color:#fff;
+		height: 460px !important;
 }
 
 #revolution-slider{

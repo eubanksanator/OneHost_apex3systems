@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
 
+
     <!-- Javascript Files
     ================================================== -->
     <script src="js/jquery.min.js"></script>
@@ -86,14 +87,29 @@
                     <ul id="mainmenu">
                         <li><a href="#revolution-slider">Home</a></li>
                         <li><a href="#page-about">About Us</a></li>
-                        <li><a href="#page-services">Services</a></li>
-                        <li><a href="#page-contact">Contact</a></li>
-                    <!--<li><a href="shortcodes.html">Shortcodes</a></li>-->
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Solutions <span class="caret"></span></a>
+                                <ul>
+                                  <li><a href="#">Security</a></li>
+                                  <li><a href="#">Services</a></li>
+                                </ul>
+                        </li>
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Industries <span class="caret"></span></a>
+                                <ul>
+                                  <li><a href="#">Commercial</a></li>
+                                  <li><a href="#">Industrial</a></li>
+                                  <li><a href="#">Education</a></li>
+                                  <li><a href="#">Government</a></li>
+                                  <li><a href="#">Healthcare</a></li>
+                                  <li><a href="#">Construction</a></li>
+                                </ul>
+                        </li>
+                        <li><a href="#page-contact">Case Studies</a></li>
+                        <li><a href="#page-contact">Contact Us</a></li>
                     </ul>
                 </nav>
                 <!-- mainmenu close -->
-
-
             </div>
         </header>
         <!-- header close -->
@@ -134,8 +150,8 @@
                             data-start="1200"
                             data-easing="easeInOutExpo">
                             <a href="#" class="btn-slider">Our Services</a>&nbsp;&nbsp;
-                            <a href="#" class="btn-slider solid">Learn More</a>
-                        </div>
+<!--                             <a href="#" class="btn-slider solid">Learn More</a>
+ -->                        </div>
 
 
                     </li>
@@ -171,7 +187,7 @@
                             data-start="1200"
                             data-easing="easeInOutExpo">
                             <a href="#" class="btn-slider">Our Services</a>&nbsp;&nbsp;
-                            <a href="#" class="btn-slider solid">Learn More</a>
+                            <!-- <a href="#" class="btn-slider solid">Learn More</a> -->
                         </div>
                     </li>
 
@@ -206,8 +222,8 @@
                             data-start="1200"
                             data-easing="easeInOutExpo">
                             <a href="#" class="btn-slider">Our Services</a>&nbsp;&nbsp;
-                            <a href="#" class="btn-slider solid">Learn More</a>
-                        </div>
+<!--                             <a href="#" class="btn-slider solid">Learn More</a>
+ -->                        </div>
                     </li>
                 </ul>
             </div>
@@ -234,7 +250,7 @@
                         <div class="feature-box-image col-md-4 animated" data-animation="fadeInUp">
                             <div class="inner">
                                 <div class="text">
-                                    <img src="images/camera2.jpg" alt="" class="img-rounded">
+                                    <i class="fa fa-shield about-icon"></i>
                                     <h3>Apex Systems</h3>
                                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.
                                 </div>
@@ -244,9 +260,10 @@
                         <div class="feature-box-image col-md-4 animated" data-animation="fadeInLeft">
                             <div class="inner">
                                 <div class="text">
-                                    <img src="images/chicago-urban.jpg" alt="" class="img-rounded">
-                                    <h3>Commercial &amp Residential</h3>
-                                    Maybe give brief description one sentence about the systems we provide regarding residential and commercial
+                                    <i class="fa fa-building about-icon"></i>
+<!--                                     <img src="images/chicago-urban.jpg" alt="" class="img-rounded">
+ -->                                    <h3>Commercial &amp Residential</h3>
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
                                 </div>
                             </div>
                         </div>
@@ -254,8 +271,9 @@
                         <div class="feature-box-image col-md-4 animated" data-animation="fadeInRight">
                             <div class="inner">
                                 <div class="text">
-                                    <img src="images/camera1.jpg" alt="" class="img-rounded">
-                                    <h3>Security Conscious</h3>
+                                    <i class="fa fa-rocket about-icon"></i>
+<!--                                     <img src="images/camera1.jpg" alt="" class="img-rounded">
+ -->                                    <h3>Security Conscious</h3>
                                     Our workforce is dedicated to the development of cutting-edge security technologies and to exceptional customer care.
                                 </div>
                             </div>
@@ -295,7 +313,8 @@
                         <!-- feature box begin -->
                         <div class="feature-box-small-icon col-md-6 animated" data-animation="fadeInLeft">
                             <div class="inner">
-                                <i class="fa fa-gears circle"></i>
+                            <i class="fa fa-bar-chart"></i>
+                                <!-- <i class="fa fa-gears circle"></i> -->
                                 <div class="text">
                                     <h3>Schools</h3>
                                     Whether in a neighborhood school or across a large university campus, the surveillance and security needs of those in the education market are specific and ever expanding. <span class="id-color">APEX3</span> SYSTEMS understands the individual challenges of educational institutions and provides cutting edge cost effective solutions to specifically meet those needs.
@@ -575,83 +594,6 @@
                             <h1 class="animated" data-animation="fadeInLeft">Contact Us
                         	<span class="small-border"></span>
                             </h1>
-
-                               <!-- Team Member begins -->
-<section id="page-team" class="animated" data-animation="fadeIn" data-speed="8" data-type="background">
-    <div class="container">
-        <div class="row">
-            <!-- team member -->
-            <div class="team col-md-3">
-             <!--    <div class="picframe">
-                    <span class="overlay">
-                        <span class="sb-icons">
-                            <img src="images/social-icons/24x24/linkedin.png" alt=""><img src="images/social-icons/24x24/twitter.png" alt=""><img src="images/social-icons/24x24/facebook.png" alt=""><img src="images/social-icons/24x24/dribbble.png" alt=""><img src="images/social-icons/24x24/blogger.png" alt="">
-                        </span>
-                    </span>
-                    <img src="images/team/team_pic_1.jpg" class="team-pic" alt="" />
-                </div> -->
-                <h5>James Taff</h5>
-                <div class="team_desc">CEO</div>
-                <div class="team_text"><strong>Email:</strong> jtaff@apex3systems.com<br>
-                <strong>Phone:</strong> (773) 867-8813</div>
-            </div>
-            <!-- team close -->
-
-            <!-- team member -->
-            <div class="team col-md-3">
-                <!-- <div class="picframe">
-                    <span class="overlay">
-                        <span class="sb-icons">
-                            <img src="images/social-icons/24x24/linkedin.png" alt=""><img src="images/social-icons/24x24/twitter.png" alt=""><img src="images/social-icons/24x24/facebook.png" alt=""><img src="images/social-icons/24x24/dribbble.png" alt=""><img src="images/social-icons/24x24/blogger.png" alt="">
-                        </span>
-                    </span>
-                    <img src="images/team/team_pic_1.jpg" class="team-pic" alt="" />
-                </div> -->
-                <h5>Richard Stampanato</h5>
-                <div class="team_desc">COO</div>
-                <div class="team_text"><strong>Email:</strong> jtaff@apex3systems.com<br>
-                                       <strong>Phone:</strong> (773) 867-8813</div>
-            </div>
-            <!-- Team close -->
-
-            <!-- team member -->
-            <div class="team col-md-3">
-                <!-- <div class="picframe">
-                    <span class="overlay">
-                        <span class="sb-icons">
-                            <img src="images/social-icons/24x24/linkedin.png" alt=""><img src="images/social-icons/24x24/twitter.png" alt=""><img src="images/social-icons/24x24/facebook.png" alt=""><img src="images/social-icons/24x24/dribbble.png" alt=""><img src="images/social-icons/24x24/blogger.png" alt="">
-                        </span>
-                    </span>
-                    <img src="images/team/team_pic_2.jpg" class="team-pic" alt="" />
-                </div> -->
-                <h5>Zain Shahzada</h5>
-                <div class="team_desc">CIO</div>
-                <div class="team_text"><strong>Email:</strong> zshahzada@apex3systems.com <br>
-                                        <strong>Phone:</strong> (773) 867-8825</div>
-            </div>
-            <!-- team close -->
-
-            <!-- team member -->
-            <div class="team col-md-3">
-             <!--    <div class="picframe">
-                    <span class="overlay">
-                        <span class="sb-icons">
-                            <img src="images/social-icons/24x24/linkedin.png" alt=""><img src="images/social-icons/24x24/twitter.png" alt=""><img src="images/social-icons/24x24/facebook.png" alt=""><img src="images/social-icons/24x24/dribbble.png" alt=""><img src="images/social-icons/24x24/blogger.png" alt="">
-                        </span>
-                    </span>
-                    <img src="images/team/team_pic_3.jpg" class="team-pic" alt="" />
-                </div> -->
-                <h5>Jason Hill</h5>
-                <div class="team_desc">Vice President</div>
-                <div class="team_text"><strong>Email:</strong> jhill@apex3systems.com <br>
-                                        <strong>Phone:</strong> (773) 867-8826</div>
-            </div>
-            <!-- team close -->
-        </div>
-    </div>
-</section>
-<!-- Team member section close -->
-
                             <div class="spacer-single"></div>
                         </div>
 
